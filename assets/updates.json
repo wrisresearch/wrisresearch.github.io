@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Website Launch",
+    "description": "The early-stage WRIS website has been launched. Several features are planned but not yet implemented. Current efforts focus on building awareness while developing clearer guidance for prospective members.",
+    "category": "Milestone",
+    "date": "2026-01-18",
+    "featured": false,
+    "tags": ["web", "launch", "development"]
+  },
+  {
+    "title": "Official Guide Development Underway",
+    "description": "Development has begun on the official WRIS guide. It will document the organization’s purpose, operating principles, member expectations, and representative work outputs. An extended internal edition is also in progress to formalize internal processes and operations.",
+    "category": "Initiative",
+    "date": "2026-01-18",
+    "featured": true,
+    "tags": ["governance", "operations", "membership", "documentation"]
+  }
+]

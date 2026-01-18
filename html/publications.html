@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ================================
+         META & PAGE SETTINGS
+    ================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRIS | Industrial Research</title>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <!-- ================================
+         STYLESHEETS
+    ================================= -->
+    <link rel="stylesheet" type="text/css" href="../css/styles-boilerplate.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ================================
+         HEADER & NAVIGATION
+    ================================= -->
+    <header>
+        <nav>
+            <div class="container">
+                <!-- Logo -->
+
+                <h1 class="logo">
+                    <a href="./index.html">WRIS <span>Workgroup for resilient industrial systems</span></a>
+                </h1>
+
+                <!-- Navigation links -->
+                <ul class="site-nav">
+                    <li><a href="./events.html"><i class="fa fa-home site-nav--icon"></i>Events</a></li>
+                    <li><a href="./members.html"><i class="fa fa-info site-nav--icon"></i>Members</a></li>
+                    <li><a href="./publications.html"><i class="fa fa-pencil site-nav--icon"></i>Publications</a></li>
+                    <li><a href="./updates.html"><i class="fa fa-pencil site-nav--icon"></i>Updates</a></li>
+                </ul>
+
+                <!-- Mobile menu toggle -->
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ================================
+        TBA - PUBLICATIONS
+        ================================= -->
+    <section style="background-color: #f9fafb;;" class="info">
+        <h1 style="color: #ff6969;">TBA...</h1>
+        <p class="tagline">
+            <i>Publication details are coming soon.</i>
+            <br><br> Check back here, or subscribe to our newsletter below for updates on upcoming projects and initiatives.
+        <div class="actions">
+            <a class="btn-secondary" href="./members.html">Members</a>
+        </div>
+    </section>
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer class="footer">
+        <div class="footer__addr">
+            <address>
+                <h4>Workgroup for Resilient Industrial Systems</h4>
+                Toronto, ON, Canada<br><br>
+                <a class="footer__btn" href="mailto:mdeosaran1@learn.athabascau.ca@gmail.com">Contact the Coordinator</a>
+            </address>
+        </div>
+    
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <!-- <h2 class="nav__title">Media</h2> -->
+                <ul class="nav__ul">
+                    <!-- <li><a href="#">Online</a></li>
+              <li><a href="#">Print</a></li>
+              <li><a href="#">Alternative Ads</a></li> -->
+                </ul>
+            </li>
+            <li class="nav__item nav__item--extra">
+                <!-- <h2 class="nav__title">Technology</h2> -->
+                <ul class="nav__ul nav__ul--extra">
+                    <!-- <li><a href="#">Hardware Design</a></li>
+              <li><a href="#">Software Design</a></li>
+              <li><a href="#">Digital Signage</a></li>
+              <li><a href="#">Automation</a></li>
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">IoT</a></li> -->
+                </ul>
+            </li>
+            <li class="nav__item">
+                <!-- <h2 class="nav__title">Legal</h2> -->
+                <ul class="nav__ul">
+                    <!-- <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Sitemap</a></li> -->
+                </ul>
+            </li>
+        </ul>
+    
+        <!-- Small, centered Typeform embed -->
+        <div class="footer__form-container">
+            <div data-tf-live="01KF851VYP9SKPJ0FRV0RK702W"></div>
+            <script src="//embed.typeform.com/next/embed.js"></script>
+        </div>
+    
+    
+        <div class="legal">
+            <p>&copy; 2026 Michel Deosaran. All rights reserved.</p>
+            <div class="legal__links">
+                <span>Made with <span class="heart"> ♥ </span> from Athbasca University</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================
+         SCRIPTS
+    ================================= -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/settings-manager.js"></script>
+    <script src="../js/accessibility-toggles.js"></script>
+    <script src="../js/ascii-graphics.js"></script>
+
+    <script>
+        // Initialize settings and accessibility
+        document.addEventListener("DOMContentLoaded", () => {
+            SettingsManager.load();
+            SettingsManager.apply();
+            Accessibility.init();
+        });
+
+        // Mobile menu toggle
+        $('.menu-toggle').click(function () {
+            $('.site-nav').toggleClass('site-nav--open', 500);
+            $(this).toggleClass('open');
+        });
+    </script>
+
+</body>
+
+</html>
