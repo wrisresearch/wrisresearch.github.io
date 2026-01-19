@@ -13,7 +13,7 @@
          STYLESHEETS
     ================================= -->
     <link rel="stylesheet" type="text/css" href="../css/styles-boilerplate.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles-updates.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +28,11 @@
         <nav>
             <div class="container">
                 <!-- Logo -->
-
                 <h1 class="logo">
-                    <a href="./index.html">WRIS <span>Workgroup for resilient industrial systems</span></a>
+                    <a href="../index.html">
+                        WRIS <br><span>Workgroup for resilient <br>industrial systems</span>
+                    </a>
                 </h1>
-
                 <!-- Navigation links -->
                 <ul class="site-nav">
                     <li><a href="./events.html"><i class="fa fa-home site-nav--icon"></i>Events</a></li>
@@ -49,53 +49,18 @@
         </nav>
     </header>
     <!-- ================================
-        UPDATES
-    ================================= -->
-    <main class="container updates">
+        TBA - PUBLICATIONS
+        ================================= -->
+    <section style="background-color: #f9fafb;;" class="info">
+        <h1 style="color: #ff6969;">TBA...</h1>
+        <p class="tagline">
+            <i>Publication details are coming soon.</i>
+            <br><br> Check back here, or subscribe to our newsletter below for updates on upcoming projects and initiatives.
+        <div class="actions">
+            <a class="btn-secondary" href="./members.html">Members</a>
+        </div>
+    </section>
 
-        <!-- Header -->
-        <section class="updates__header">
-            <h1>Updates</h1>
-            <p>Research activity, internal developments, and published outputs.</p>
-        </section>
-
-        <!-- Stats -->
-        <section class="updates__stats">
-            <div><span id="stat-total">0</span>
-                <p>Total Items</p>
-            </div>
-            <div><span id="stat-categories">0</span>
-                <p>Categories</p>
-            </div>
-            <div><span id="stat-featured">0</span>
-                <p>Featured</p>
-            </div>
-            <div><span id="stat-tags">0</span>
-                <p>Topics</p>
-            </div>
-        </section>
-
-        <!-- Featured -->
-        <section id="featured-section" class="updates__featured">
-            <h2>Featured</h2>
-            <div id="featured-grid" class="updates__grid"></div>
-        </section>
-
-        <!-- Filters -->
-        <section id="filters" class="updates__filters"></section>
-
-        <!-- Grid -->
-        <section>
-            <div id="updates-grid" class="updates__grid"></div>
-            <p id="no-results" class="updates__empty hidden">
-                No items found.
-            </p>
-        </section>
-
-    </main>
-
-    
-    
     <!-- ================================
          FOOTER
     ================================= -->
@@ -107,7 +72,7 @@
                 <a class="footer__btn" href="mailto:mdeosaran1@learn.athabascau.ca@gmail.com">Contact the Coordinator</a>
             </address>
         </div>
-        
+    
         <ul class="footer__nav">
             <li class="nav__item">
                 <!-- <h2 class="nav__title">Media</h2> -->
@@ -115,36 +80,36 @@
                     <!-- <li><a href="#">Online</a></li>
               <li><a href="#">Print</a></li>
               <li><a href="#">Alternative Ads</a></li> -->
-            </ul>
-        </li>
+                </ul>
+            </li>
             <li class="nav__item nav__item--extra">
                 <!-- <h2 class="nav__title">Technology</h2> -->
                 <ul class="nav__ul nav__ul--extra">
                     <!-- <li><a href="#">Hardware Design</a></li>
-                    <li><a href="#">Software Design</a></li>
-                    <li><a href="#">Digital Signage</a></li>
-                    <li><a href="#">Automation</a></li>
-                    <li><a href="#">Artificial Intelligence</a></li>
-                    <li><a href="#">IoT</a></li> -->
+              <li><a href="#">Software Design</a></li>
+              <li><a href="#">Digital Signage</a></li>
+              <li><a href="#">Automation</a></li>
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">IoT</a></li> -->
                 </ul>
             </li>
             <li class="nav__item">
                 <!-- <h2 class="nav__title">Legal</h2> -->
                 <ul class="nav__ul">
                     <!-- <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Sitemap</a></li> -->
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Sitemap</a></li> -->
                 </ul>
             </li>
         </ul>
-        
+    
         <!-- Small, centered Typeform embed -->
         <div class="footer__form-container">
             <div data-tf-live="01KF851VYP9SKPJ0FRV0RK702W"></div>
             <script src="//embed.typeform.com/next/embed.js"></script>
         </div>
-        
-        
+    
+    
         <div class="legal">
             <p>&copy; 2026 Michel Deosaran. All rights reserved.</p>
             <div class="legal__links">
@@ -152,13 +117,12 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- ================================
-    SCRIPTS
+         SCRIPTS
     ================================= -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../js/ascii-graphics.js"></script>
-    <script src="../js/updates.js"></script>
 
     <script>
         // Initialize settings and accessibility
@@ -167,13 +131,13 @@
             SettingsManager.apply();
             Accessibility.init();
         });
-        
+
         // Mobile menu toggle
         $('.menu-toggle').click(function () {
             $('.site-nav').toggleClass('site-nav--open', 500);
             $(this).toggleClass('open');
         });
-        </script>
+    </script>
 
 </body>
 

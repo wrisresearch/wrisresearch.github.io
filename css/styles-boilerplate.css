@@ -10,6 +10,7 @@ body {
     padding: 0;
 }
 
+
 h1 a{
     margin-top: 25px;
     font-weight: 600;
@@ -37,6 +38,14 @@ nav {
     border-bottom:1px solid #d5d5d5;
 }
 
+nav .container {
+    display: flex;
+    align-items: center;
+    /* vertically center everything */
+    justify-content: space-between;
+    /* logo left, links right */
+}
+
 nav::after {
     content: '';
     clear: both;
@@ -56,6 +65,7 @@ nav::after {
     text-transform: uppercase;
     font-weight: 700;
 }
+
 
 .logo span {
     font-weight: 300;
@@ -151,6 +161,7 @@ nav::after {
 }
 
 
+
 @media (min-width: 970px) {
 
     .menu-toggle {
@@ -216,7 +227,7 @@ nav::after {
         display: inline-block;
         /* ensure links stay inline */
     }
-}
+} */
 
 /* =============================================================================
 ████████████████████  M A I N  ████████████████████
@@ -370,6 +381,52 @@ nav::after {
 }
 
 
+/*  */
+/* Logo container */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    /* space between image and text */
+    text-decoration: none;
+    color: #1f2937;
+}
+
+/* Logo image */
+.logo-img {
+    height: 32px;
+    /* adjust size */
+    width: auto;
+    display: block;
+}
+
+/* Main title */
+.logo-text {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+/* Subtitle under main title */
+.logo-sub {
+    font-weight: 300;
+    font-size: 0.6em;
+    /* smaller subtitle */
+}
+
+/* Float logo for desktop nav */
+@media (min-width: 970px) {
+    .logo {
+        float: left;
+    }
+}
+
+
+
+
+/*  */
 
 
 /* =============================================================================
