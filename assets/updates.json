@@ -14,5 +14,21 @@
     "date": "2026-01-18",
     "featured": true,
     "tags": ["governance", "operations", "membership", "documentation"]
+  },
+  {
+    "title": "Official WRIS Group Launched on landing.athabascau.ca",
+    "description": "The official WRIS group is now live on landing.athabascau.ca",
+    "category": "Initiative",
+    "date": "2026-01-20",
+    "featured": false,
+    "tags": ["governance", "operations", "membership", "documentation"]
+  },
+  {
+    "title": "Work Board Development Underway",
+    "description": "Development has begun on the WRIS Work Board, which will publish open projects, research tasks, and operational work available to members.",
+    "category": "Initiative",
+    "date": "2026-01-20",
+    "featured": true,
+    "tags": ["projects", "operations", "membership", "governance"]
   }
 ]
