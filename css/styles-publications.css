@@ -1,0 +1,223 @@
+/* ================================
+   UPDATES
+================================ */
+
+.updates {
+  padding: 4rem 1rem;
+  color: #1f2937;
+}
+
+/* Header */
+.updates__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.updates__header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Stats cards */
+.updates__stats {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(160px, 1fr)
+  );
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Animate each stat on load */
+.updates__stats div {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid grey;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s forwards;
+  transition: all 0.3s ease;
+}
+
+/* Add hover shadow and scale for numbers */
+.updates__stats div:hover {
+  box-shadow: 0 6px 15px
+    rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px)
+    scale(1.05);
+}
+
+.updates__stats span {
+  font-size: 2rem;
+  font-weight: 600;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Hover effect on the number itself */
+.updates__stats div:hover span {
+  color: #ff6969;
+  transform: scale(1.2);
+}
+
+/* Stagger animation for each stat card */
+.updates__stats div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.updates__stats div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.updates__stats div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.updates__stats div:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Animation keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Featured updates section */
+.updates__featured {
+  margin-bottom: 3rem;
+}
+
+/* Filter buttons */
+.updates__filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.updates__filters button {
+  padding: 0.45rem 0.9rem;
+  background: transparent;
+  border: 1px solid
+    rgba(255, 255, 255, 0.2);
+  color: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.updates__filters button:hover {
+  border-color: #ff6969;
+}
+
+/* Updates grid */
+.updates__grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(260px, 1fr)
+  );
+  gap: 1.5rem;
+}
+
+.updates__grid article {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s forwards;
+}
+
+/* Stagger featured items in grid */
+.updates__grid article:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.updates__grid article:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.updates__grid article:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.updates__grid article:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.updates__grid h3 {
+  margin-top: 0;
+}
+
+.updates__grid .meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Empty state */
+.updates__empty {
+  text-align: center;
+  margin-top: 3rem;
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Highlight stats numbers */
+#stat-total,
+#stat-categories,
+#stat-featured,
+#stat-tags {
+  color: #ff6969;
+}
+
+/* ========================
+  links
+======================== */
+a {
+  display: inline-block;
+  color: #1e3a8a; /* deep blue for readability */
+  text-decoration: none;
+  padding: 4px 0;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+/* Add a thin underline on hover with animation */
+a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ff6969;
+  transition: width 0.25s ease;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+a:hover {
+  color: #ff6969;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Optional: subtle scale effect on hover for modern feel */
+a:hover {
+  transform: scale(1.02);
+}

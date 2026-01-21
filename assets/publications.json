@@ -1,0 +1,11 @@
+[
+  {
+    "title": "WRIS Official Guide 2026",
+    "description": "A comprehensive guide for members detailing how to get involved with WRIS, including roles, responsibilities, and resources.",
+    "category": "Guides",
+    "date": "2026-01-20",
+    "featured": true,
+    "tags": ["web", "guide", "membership"],
+    "route": "../assets/resources/wris-official-guide/wris-official-guide.json"
+  }
+]

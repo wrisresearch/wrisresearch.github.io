@@ -13,7 +13,8 @@
          STYLESHEETS
     ================================= -->
     <link rel="stylesheet" type="text/css" href="../css/styles-boilerplate.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles-publications.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles-resource.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
     ================================= -->
     <header>
         <nav>
-            <div  class="container">
+            <div class="container">
                 <!-- Logo -->
                 <h1 class="logo">
                     <a href="../index.html">
@@ -49,47 +50,22 @@
         </nav>
     </header>
     <!-- ================================
-        TBA - PUBLICATIONS
-        ================================= -->
-    <main class="container updates">
-        <!-- Header -->
-        <section class="updates__header">
-            <h1>Publications</h1>
-            <p>Research activity, and Published outputs</p>
-        </section>
-
-        <!-- Stats -->
-        <section class="updates__stats">
-            <div><span id="stat-total">0</span>
-                <p>Total Items</p>
-            </div>
-            <div><span id="stat-categories">0</span>
-                <p>Categories</p>
-            </div>
-            <div><span id="stat-featured">0</span>
-                <p>Featured</p>
-            </div>
-            <div><span id="stat-tags">0</span>
-                <p>Topics</p>
+        RESOURCE
+    ================================= -->
+    <main class="main">
+        <!-- a sidebar consisting of menu of documentation page -->
+        <aside class="table-of-content">
+            <ul class="main-menu"><!-- dynamics index --></ul>
+        </aside>
+        <section class="main-content">
+           <!-- dynamics pages -->
+            <div class="page-nav">
+                <a href="previous.html" class="page-nav__btn prev">← Previous</a>
+                <a href="next.html" class="page-nav__btn next">Next →</a>
             </div>
         </section>
+        <!-- main content of documentation page will be here -->
 
-        <!-- Featured -->
-        <section id="featured-section" class="updates__featured">
-            <h2>Featured</h2>
-            <div id="featured-grid" class="updates__grid"></div>
-        </section>
-
-        <!-- Filters -->
-        <section id="filters" class="updates__filters"></section>
-
-        <!-- Grid -->
-        <section>
-            <div id="updates-grid" class="updates__grid"></div>
-            <p id="no-results" class="updates__empty hidden">
-                No items found.
-            </p>
-        </section>
     </main>
 
     <!-- ================================
@@ -100,10 +76,11 @@
             <address>
                 <h4>Workgroup for Resilient Industrial Systems</h4>
                 Toronto, ON, Canada<br><br>
-                <a class="footer__btn" href="mailto:mdeosaran1@learn.athabascau.ca@gmail.com">Contact the Coordinator</a>
+                <a class="footer__btn" href="mailto:mdeosaran1@learn.athabascau.ca@gmail.com">Contact the
+                    Coordinator</a>
             </address>
         </div>
-    
+
         <ul class="footer__nav">
             <li class="nav__item">
                 <!-- <h2 class="nav__title">Media</h2> -->
@@ -133,14 +110,14 @@
                 </ul>
             </li>
         </ul>
-    
+
         <!-- Small, centered Typeform embed -->
-        <div class="footer__form-container">
+        <!-- <div class="footer__form-container">
             <div data-tf-live="01KF851VYP9SKPJ0FRV0RK702W"></div>
             <script src="//embed.typeform.com/next/embed.js"></script>
-        </div>
-    
-    
+        </div> -->
+
+
         <div class="legal">
             <p>&copy; 2026 Michel Deosaran. All rights reserved.</p>
             <div class="legal__links">
@@ -154,7 +131,8 @@
     ================================= -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../js/ascii-graphics.js"></script>
-    <script src="../js/publications.js"></script>
+    <script src="../js/resourceLoader.js"></script>
+
     <script>
         // Initialize settings and accessibility
         document.addEventListener("DOMContentLoaded", () => {

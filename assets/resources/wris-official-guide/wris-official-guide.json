@@ -1,0 +1,17 @@
+{
+  "title": "WRIS Official Guide",
+  "sections": [
+    { "name": "Introduction", "file": "../assets/resources/wris-official-guide/introduction.html" },
+    { "name": "Organization Overview", "file": "../assets/resources/wris-official-guide/organization-overview.html" },
+    { "name": "Member Onboarding", "file": "../assets/resources/wris-official-guide/member-onboarding.html" },
+    { "name": "Tools & Resources", "file": "../assets/resources/wris-official-guide/tools-resources.html" },
+    { "name": "Operating Principles", "file": "../assets/resources/wris-official-guide/operating-principles.html" },
+    { "name": "Member Responsibilities", "file": "../assets/resources/wris-official-guide/member-responsibilities.html" },
+    { "name": "Projects & Research", "file": "../assets/resources/wris-official-guide/projects-research.html" },
+    { "name": "Internal Processes", "file": "../assets/resources/wris-official-guide/internal-processes.html" },
+    { "name": "Communication & Reporting", "file": "../assets/resources/wris-official-guide/communication-reporting.html" },
+    { "name": "Policies & Compliance", "file": "../assets/resources/wris-official-guide/policies-compliance.html" },
+    { "name": "Learning & Growth", "file": "../assets/resources/wris-official-guide/learning-growth.html" },
+    { "name": "Appendices", "file": "../assets/resources/wris-official-guide/appendices.html" }
+  ]
+}
