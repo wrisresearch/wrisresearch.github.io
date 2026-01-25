@@ -30,8 +30,8 @@
                 <!-- Logo -->
 
                 <h1 class="logo">
-                    <a href="../index.html">
-                        WRIS <br><span>Workgroup for resilient <br>industrial systems</span>
+                    <a href="../index.html"><br><span>Workgroup for resilient <br>industrial systems <br></span>
+                        <div style="display: block; margin-top: 10px; margin-bottom: 20px;">|&nbsp;WRIS<div>
                     </a>
                 </h1>
 
@@ -53,13 +53,42 @@
     <!-- ================================
                MEMBERS FORM
         ================================= -->
-        <section
-            style="padding: 3rem 1rem; display: flex; justify-content: center; align-items: flex-start; flex-direction: column;"
-        >
-            <div data-tf-live="01KF819PAT629KH0EN1WC0RH17" data-tf-auto-height="true"
-                style="width: 100%; max-width: 800px; margin: 0 auto; min-height: 600px;">
-            </div>
-        </section>
+  
+
+        <main class="container updates">
+            <!-- Header -->
+            <section class="updates__header">
+                <h1>Members</h1>
+                <p>Registration form, and Member introductions</p>
+            </section>
+        
+
+        
+            <!-- Featured -->
+            <section>
+            
+                <div data-tf-live="01KF819PAT629KH0EN1WC0RH17" data-tf-auto-height="true">
+                </div>
+            </section>
+                <!-- Stats -->
+                <section class="updates__stats">
+                    <div><span id="stat-total">2</span>
+                        <p>Active Members</p>
+                    </div>
+                </section>
+        
+            <!-- Filters -->
+            <section id="filters" class="updates__filters"></section>
+        
+            <!-- Grid -->
+            <section>
+                <div id="updates-grid" class="updates__grid"></div>
+                <p id="no-results" class="updates__empty hidden">
+                    No items found.
+                </p>
+            </section>
+        </main>
+
 
     <!-- ================================
             FOOTER

@@ -77,19 +77,24 @@ nav::after {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #fff;
+  background-color: #fffffffa;
   height: 0px;
   overflow: hidden;
-  border-radius: 6.5px;
+  border-radius: 3px;
 }
 
 .site-nav--open {
   height: auto;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  width: 100%;
+  border-bottom: 1px solid #d5d5d5;
 }
 
-.site-nav li {
-  border-bottom: 1px solid #575766;
-}
+/* .site-nav li {
+  border: 1px solid #cfcfcf71;
+} */
 
 .site-nav li:last-child {
   border-bottom: none;
@@ -106,7 +111,7 @@ nav::after {
 
 .site-nav a:hover,
 .site-nav a:focus {
-  background: #f8f8f8;
+  background: #f8f8f81d;
   color: #464655;
 }
 
@@ -121,43 +126,54 @@ nav::after {
 
 .menu-toggle {
   padding: 1em;
-  position: absolute;
+  /* position: absolute; */
   top: 0.5em;
   right: 1em;
   cursor: pointer;
+  /* border: 1px solid grey; */
+}
+.hamburger {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background: #3a3a3a;
+  border-radius: 3px;
+  transition: all 0.16s ease-in-out;
 }
 
-.hamburger,
 .hamburger::before,
 .hamburger::after {
   content: "";
-  display: block;
-  background: #3a3a3a;
-  height: 3px;
+  position: absolute;
   width: 25px;
+  height: 3px;
+  background: #3a3a3a;
   border-radius: 3px;
-  transition: all ease-in-out 500ms;
+  transition: all 0.16s ease-in-out;
+  left: 0;
 }
 
+/* Evenly spaced */
 .hamburger::before {
-  transform: translatey(-7px);
+  top: -8px;
 }
-
 .hamburger::after {
-  transform: translatey(4px);
+  top: 8px;
 }
 
+/* Open state */
 .open .hamburger {
-  transform: rotate(45deg);
+  background: transparent; /* hide middle line */
 }
 
 .open .hamburger::before {
-  opacity: 0;
+  top: 0;
+  transform: rotate(45deg);
 }
 
 .open .hamburger::after {
-  transform: translatey(-3px)
-    rotate(-90deg);
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 @media (min-width: 970px) {
@@ -191,40 +207,6 @@ nav::after {
     display: none;
   }
 }
-
-@media (max-width: 1000px) {
-  .info {
-    flex-direction: column;
-    /* stack text and buttons */
-    align-items: flex-start;
-    /* left-align everything */
-  }
-
-  .actions {
-    width: 100%;
-    margin-top: 1rem;
-    /* spacing under text */
-    align-items: flex-start;
-    /* buttons aligned left */
-  }
-}
-
-@media (min-width: 970px) {
-  .site-nav li {
-    display: inline-block;
-    margin-left: 2.5em;
-    /* add consistent spacing */
-  }
-
-  .site-nav a {
-    padding: 0;
-    margin: 0;
-    /* remove margin from links */
-    display: inline-block;
-    /* ensure links stay inline */
-  }
-}
-*/
 
 /* =============================================================================
 ████████████████████  M A I N  ████████████████████
@@ -284,6 +266,7 @@ nav::after {
   padding: 0;
   margin: 0;
   max-width: 42ch;
+  line-height: 1.7em;
 }
 
 .info {
@@ -294,14 +277,14 @@ nav::after {
   gap: 2rem;
   padding: 6rem 3rem 9rem 6rem;
   font-size: xx-large;
-  line-height: 1.4;
+  /* line-height: 1.4; */
   background-color: rgba(
-    255,
+    140,
     105,
-    105,
-    0.063
+    69,
+    0.018
   );
-  /* background-color: #f9fafb; */
+
   color: rgba(0, 0, 0, 0.849);
   display: flex;
   justify-content: space-between;
@@ -313,10 +296,10 @@ nav::after {
   height: 200px;
   width: 100%;
   background-color: rgba(
-    255,
+    140,
     105,
-    105,
-    0.063
+    69,
+    0.018
   );
   overflow: hidden;
   text-align: center;
@@ -358,21 +341,20 @@ nav::after {
 .info h1,
 .info .tagline {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateX(-20px);
   animation: fadeUp 0.7s ease-out
     forwards;
 }
 
-.info .tagline {
+/* .info .tagline {
   animation-delay: 0.15s;
-}
+} */
 
 .info .actions {
   opacity: 0;
   transform: translateX(-30px);
   animation: fadeLeft 0.7s ease-out
     forwards;
-  animation-delay: 0.35s;
 }
 
 @keyframes fadeUp {
@@ -558,7 +540,7 @@ body {
 }
 
 .footer__logo {
-  font-family: "Pacifico", cursive;
+  /* font-family: "Pacifico", cursive; */
   font-weight: 400;
   text-transform: lowercase;
   font-size: 1.5rem;
@@ -674,7 +656,7 @@ body {
 /* Two-column content section */
 
 .content-stats {
-  padding: 6rem 0;
+  padding: 3rem 0;
   /* more breathing room */
   background-color: #f9fafb;
   color: #202020;
@@ -832,4 +814,109 @@ body {
 
 .stat-number {
   color: #ff6969;
+}
+
+@media (max-width: 812px) {
+  .info {
+    flex-direction: column;
+    /* stack text and buttons */
+    align-items: flex-start;
+    padding: 1em;
+    /* left-align everything */
+  }
+
+  .actions {
+    width: 100%;
+    margin-top: 1rem;
+    /* spacing under text */
+    align-items: flex-start;
+    /* buttons aligned left */
+  }
+
+  .banner {
+    height: 90px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info h1 {
+    order: 1; /* first */
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  .info .tagline {
+    order: 3; /* second */
+    font-size: 0.6em;
+  }
+
+  .info .actions {
+    order: 2; /* last */
+    margin-bottom: 2em;
+  }
+
+  .legal span {
+    display: none;
+  }
+}
+
+@media (min-width: 812px) {
+  .site-nav li {
+    display: inline-block;
+    margin-left: 2.5em;
+    /* add consistent spacing */
+  }
+
+  .site-nav a {
+    padding: 0;
+    margin: 0;
+    /* remove margin from links */
+    display: inline-block;
+
+    /* ensure links stay inline */
+  }
+}
+
+/* ========================
+  links
+======================== */
+.updates a {
+  display: inline-block;
+  color: #1e3a8a; /* deep blue for readability */
+  text-decoration: none;
+  padding: 4px 0;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+/* Add a thin underline on hover with animation */
+a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ff6969;
+  transition: width 0.25s ease;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+a:hover {
+  color: #ff6969;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Optional: subtle scale effect on hover for modern feel */
+a:hover {
+  transform: scale(1.02);
 }

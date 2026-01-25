@@ -8,9 +8,9 @@
     "tags": ["web", "launch", "development"]
   },
   {
-    "title": "Official Guide Development Underway",
-    "description": "Development has begun on the official WRIS guide. It will document the organization’s purpose, operating principles, member expectations, and representative work outputs. An extended internal edition is also in progress to formalize internal processes and operations.",
-    "category": "Initiative",
+    "title": "Official Guide Released",
+    "description": "The official WRIS guide has been released.",
+    "category": "Milestone",
     "date": "2026-01-18",
     "featured": true,
     "tags": ["governance", "operations", "membership", "documentation"]
@@ -18,14 +18,14 @@
   {
     "title": "Official WRIS Group Launched on landing.athabascau.ca",
     "description": "The official WRIS group is now live on landing.athabascau.ca",
-    "category": "Initiative",
+    "category": "Milestone",
     "date": "2026-01-20",
     "featured": false,
     "tags": ["governance", "operations", "membership", "documentation"]
   },
   {
-    "title": "Work Board Development Underway",
-    "description": "Development has begun on the WRIS Work Board, which will publish open projects, research tasks, and operational work available to members.",
+    "title": "Assignment Board Development Underway",
+    "description": "The Assignment board will be where members can browse and pick-up new assignments.",
     "category": "Initiative",
     "date": "2026-01-20",
     "featured": true,

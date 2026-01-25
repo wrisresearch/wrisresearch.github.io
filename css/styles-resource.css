@@ -8,7 +8,7 @@
   /* makes the sidebar sticky */
   position: sticky;
   top: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   z-index: 0;
 }
 
@@ -31,9 +31,10 @@
 /* styles for sub-heading inside our menu */
 .menu-sub-heading {
   font-weight: bold;
+  font-size: x-large;
   text-decoration: none;
-  margin-bottom: 12px;
-  color: #000000;
+  margin-bottom: 20px;
+  color: #ff6969;
 }
 
 /* provides the bottom spacing for each list item in menu */
@@ -70,12 +71,12 @@
 }
 
 h2 {
-  color: #ff6969;
+  color: rgba(0, 0, 0, 0.839);
   margin-bottom: 60px;
 }
 
 h3 {
-  color: black;
+  color: rgba(0, 0, 0, 0.839);
   margin-bottom: 12px;
   font-size: large;
 }
