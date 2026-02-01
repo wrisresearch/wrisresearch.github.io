@@ -7,5 +7,14 @@
     "featured": true,
     "tags": ["web", "guide", "membership"],
     "route": "../assets/resources/wris-official-guide/wris-official-guide.json"
+  },
+    {
+    "title": "Data, Disruption, and Influence in Advisory Leadership",
+    "description": "Insights for auditors and advisory professionals on leveraging data, influencing stakeholders, and challenging established practices.",
+    "category": "Articles",
+    "date": "2026-02-01",
+    "featured": true,
+    "tags": ["advisory", "audit", "data-driven", "stakeholders", "strategic leadership"],
+    "route": "../assets/resources/strategic-advisory/strategic-advisory.json"
   }
 ]

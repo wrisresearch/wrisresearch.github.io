@@ -1,0 +1,15 @@
+{
+  "title": "Data, Disruption, and Influence in Advisory Leadership",
+  "sections": [
+    { "name": "Introduction", "file": "../assets/resources/strategic-advisory/introduction.html" },
+    { "name": "Data-Driven Strategies in Advisory Work", "file": "../assets/resources/strategic-advisory/data-driven-strategies.html" },
+    { "name": "Quantifying Success and Course Correction", "file": "../assets/resources/strategic-advisory/Quantifying-Success-and-Course-Correction.html"},
+    { "name": "Challenging the Status Quo", "file": "../assets/resources/strategic-advisory/challenging-status-quo.html" },
+    { "name": "Influence as a Professional Responsibility", "file": "../assets/resources/strategic-advisory/influence-professional-responsibility.html" },
+    { "name": "Resistance and Advisory Practice", "file": "../assets/resources/strategic-advisory/resistance-advisory-practice.html" },
+    { "name": "Integrating Practices Across Advisory Roles", "file": "../assets/resources/strategic-advisory/integrating-practices.html" },
+    { "name": "Conclusion & Takeaways", "file": "../assets/resources/strategic-advisory/conclusion-takeaways.html" },
+    { "name": "Resources", "file": "../assets/resources/strategic-advisory/resources.html" }
+  ]
+}
+
