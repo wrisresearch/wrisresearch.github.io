@@ -16,5 +16,25 @@
     "featured": true,
     "tags": ["advisory", "audit", "data-driven", "stakeholders", "strategic leadership"],
     "route": "../assets/resources/strategic-advisory/strategic-advisory.json"
+  },
+  {
+    "title": "Systems and Structures of the Global Marketplace",
+    "description": "An quick meta-analysis of the operational, technological, and regulatory frameworks that sustain resilient global trade.",
+    "category": "Articles",
+    "date": "2026-02-10",
+    "featured": true,
+    "tags": [
+      "global trade",
+      "supply chain",
+      "logistics",
+      "resilience",
+      "digital transformation",
+      "freight forwarding",
+      "international operations",
+      "AI in supply chains",
+      "trade compliance",
+      "operational efficiency"
+    ],
+    "route": "../assets/resources/structure-market/structure-market.json"
   }
 ]

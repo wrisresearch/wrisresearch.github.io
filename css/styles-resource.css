@@ -211,3 +211,13 @@ pre.code-block {
 .main-content.fade-in {
   opacity: 1;
 }
+
+.table-of-content a.active {
+  color: #ff6969; /* highlight color */
+  font-weight: bold;
+}
+
+.table-of-content a.active::after {
+  width: 100%; /* keeps underline full width for active link */
+  background: #ff6969;
+}

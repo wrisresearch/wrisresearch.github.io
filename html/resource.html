@@ -146,6 +146,19 @@
             $('.site-nav').toggleClass('site-nav--open', 500);
             $(this).toggleClass('open');
         });
+
+    $(document).ready(function () {
+        // Use delegation for dynamically added links
+        $('.table-of-content').on('click', 'a', function (e) {
+            e.preventDefault(); // optional: prevent default if handling scroll
+            // Remove active from all links
+            $('.table-of-content a').removeClass('active');
+            // Add active to clicked link
+            $(this).addClass('active');
+        });
+    });
+
+
     </script>
 
 </body>

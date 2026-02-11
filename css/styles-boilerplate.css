@@ -865,6 +865,10 @@ body {
   }
 }
 
+.info a:hover::after {
+  width: 0 !important;
+}
+
 @media (min-width: 812px) {
   .site-nav li {
     display: inline-block;

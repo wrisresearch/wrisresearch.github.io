@@ -1,0 +1,15 @@
+{
+  "title": "Systems and Structures of the Global Marketplace",
+  "sections": [
+    { "name": "Introduction", "file": "../assets/resources/structure-market/introductions.html" },
+    { "name": "Complexity & Connectivity", "file": "../assets/resources/structure-market/complexity-connectivity.html" },
+    { "name": "Trade Patterns & Hubs", "file": "../assets/resources/structure-market/trade-patterns-hubs.html" },
+    { "name": "Resilience & Risk", "file": "../assets/resources/structure-market/resilience-risk.html" },
+    { "name": "Data & Knowledge", "file": "../assets/resources/structure-market/data-knowledge.html" },
+    { "name": "People & Automation", "file": "../assets/resources/structure-market/people-automation.html" },
+    { "name": "Speed & Adaptation", "file": "../assets/resources/structure-market/speed-adaptation.html" },
+    { "name": "Global Synchronous Execution", "file": "../assets/resources/structure-market/global-synchronous-execution.html" },
+    { "name": "Regulatory Bodies", "file": "../assets/resources/structure-market/regulatory-bodies.html" },
+    { "name": "Conclusion & Takeaways", "file": "../assets/resources/structure-market/conclusion-takeaways.html" }
+  ]
+}
