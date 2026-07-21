@@ -834,7 +834,7 @@ body {
   }
 
   .banner {
-    height: 90px;
+    height: 900px;
   }
 
   .info {
@@ -923,4 +923,16 @@ a:hover::after {
 /* Optional: subtle scale effect on hover for modern feel */
 a:hover {
   transform: scale(1.02);
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+.banner {
+  overflow: hidden;
 }

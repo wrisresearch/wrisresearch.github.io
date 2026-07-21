@@ -1,40 +1,11 @@
 [
   {
-    "title": "WRIS Official Guide 2026",
-    "description": "A comprehensive guide for members detailing how to get involved with WRIS, including roles, responsibilities, and resources.",
+    "title": "Sales Development Service Guide 2026",
+    "description": "A comprehensive guide explaining our sales development process, including outreach strategies, lead generation methods, client workflow, and service expectations.",
     "category": "Guides",
-    "date": "2026-01-20",
+    "date": "2026-05-20",
     "featured": true,
-    "tags": ["web", "guide", "membership"],
+    "tags": ["sales", "outreach", "lead-generation"],
     "route": "../assets/resources/wris-official-guide/wris-official-guide.json"
-  },
-    {
-    "title": "Data, Disruption, and Influence in Advisory Leadership",
-    "description": "Insights for auditors and advisory professionals on leveraging data, influencing stakeholders, and challenging established practices.",
-    "category": "Articles",
-    "date": "2026-02-01",
-    "featured": true,
-    "tags": ["advisory", "audit", "data-driven", "stakeholders", "strategic leadership"],
-    "route": "../assets/resources/strategic-advisory/strategic-advisory.json"
-  },
-  {
-    "title": "Systems and Structures of the Global Marketplace",
-    "description": "An quick meta-analysis of the operational, technological, and regulatory frameworks that sustain resilient global trade.",
-    "category": "Articles",
-    "date": "2026-02-10",
-    "featured": true,
-    "tags": [
-      "global trade",
-      "supply chain",
-      "logistics",
-      "resilience",
-      "digital transformation",
-      "freight forwarding",
-      "international operations",
-      "AI in supply chains",
-      "trade compliance",
-      "operational efficiency"
-    ],
-    "route": "../assets/resources/structure-market/structure-market.json"
   }
 ]
